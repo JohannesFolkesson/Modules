@@ -1,49 +1,49 @@
 // import lenght converter
-import { convert as convertLength } from "./convert-length.js";
+//import { convert as convertLength } from "./convert-length.js";
 
 //import weight converter
 import { convert as convertWeight} from "./convert-weight.js";
 
 // import temperature converter
-import {convert as convertTemp} from "./convert-temperature.js";
+//import {convert as convertTemp} from "./convert-temperature.js";
 
-const btn = document.querySelector("#btn")
-const btnLength = document.querySelector("#btnLength")
-
-
-
-function printTemp() {
-    const input = document.getElementById('userInputTemp');
-    const text = document.getElementById('displayTemp');
-
-    let tempC = Number(input.value);
-    let tempF = convertTemp(tempC);
-
-    text.textContent = `The input temperature celsius ${tempC} is ${tempF} degrees in fahrenheit.`
-
-    input.value = ''
-
-}
-
-btn.addEventListener('click', (event) => {
-    printTemp();
-});
+// const btn = document.querySelector("#btn")
+// const btnLength = document.querySelector("#btnLength")
 
 
-function printLength() {
-    const input = document.getElementById('userInputLength');
-   const text = document.getElementById('displayLength');
 
-    let lengthC = Number(input.value);
-    let lengthM = convertLength(lengthC);
+// {function printTemp() {
+//     const input = document.getElementById('userInputTemp');
+//     const text = document.getElementById('displayTemp');
 
-    text.textContent = `The input length ${lengthC}cm is ${lengthM}  in meters.`
+//     let tempC = Number(input.value);
+//     let tempF = convertTemp(tempC);
 
-}
+//     text.textContent = `The input temperature celsius ${tempC} is ${tempF} degrees in fahrenheit.`
 
-btnLength.addEventListener('click', (event) => {
-    printLength();
-});
+//     input.value = ''
+
+// }
+
+// btn.addEventListener('click', (event) => {
+//     printTemp();
+// });
+
+
+// function printLength() {
+//     const input = document.getElementById('userInputLength');
+//    const text = document.getElementById('displayLength');
+
+//     let lengthC = Number(input.value);
+//     let lengthM = convertLength(lengthC);
+
+//     text.textContent = `The input length ${lengthC}cm is ${lengthM}  in meters.`
+
+// }
+
+// btnLength.addEventListener('click', (event) => {
+//     printLength();
+// });}
 
 
 
